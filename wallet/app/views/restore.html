@@ -6,44 +6,44 @@
     </div>
     
     <div class="med-container">
-      <h2 class="med-title">Restore your TezBox</h2>
+      <h2 class="med-title">TezBox wiederherstellen</h2>
     <div class="row text-center tabChoices">
       <div class="col-xs-4">
-        <a ng-click="type = 'seed'" ng-class="type == 'seed' ? 'selected' : ''">Seed Phrase</a>
+        <a ng-click="type = 'seed'" ng-class="type == 'seed' ? 'selected' : ''">Seed-Wörter</a>
       </div>
       <div class="col-xs-4">
-        <a  ng-click="type = 'private'" ng-class="type == 'private' ? 'selected' : ''">Private Key</a>
+        <a  ng-click="type = 'private'" ng-class="type == 'private' ? 'selected' : ''">Privater Schlüssel</a>
       </div>
       <div class="col-xs-4">
-        <a  ng-click="type = 'ico'" ng-class="type == 'ico' ? 'selected' : ''">Fundraiser Wallet</a>
+        <a  ng-click="type = 'ico'" ng-class="type == 'ico' ? 'selected' : ''">ICO Wallet</a>
       </div>
     </div>
     <div ng-show="type == 'seed'" class="row text-center">
       <div class="col-xs-12">
-            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Please enter your seed and passphrase below and we will attempt to restore your wallet.</strong></p>
+            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Bitte geben Sie unten Ihre Seed-Wörter und Ihr Passwort ein. Wir werden versuchen, Ihr Wallet wiederherzustellen.</strong></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
             <div class="form-group">
-                <textarea rows=2 class="text-center form-control" placeholder="Enter Seed Words" ng-model="seed"></textarea>
+                <textarea rows=2 class="text-center form-control" placeholder="Seed Wörter" ng-model="seed"></textarea>
             </div>
             <div class="form-group">
-                <input type="password" class="text-center form-control" ng-model="passphrase" placeholder="Optional Passphrase">
+                <input type="password" class="text-center form-control" ng-model="passphrase" placeholder="Optionales Passwort">
             </div>
         </div>
     </div>
     <div ng-show="type == 'private'" class="row text-center">
       <div class="col-xs-12">
-            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Please enter your private key and we will attempt to restore your wallet.</strong></p>
+            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Bitte geben Sie Ihren privaten Schlüssel ein. Wir werden versuchen, Ihr Wallet wiederherzustellen.</strong></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
             <div class="form-group">
-                <input type="password" class="text-center form-control" ng-model="private_key" placeholder="Private Key">
+                <input type="password" class="text-center form-control" ng-model="private_key" placeholder="Privater Schlüssel">
             </div>
         </div>
     </div>
     <div ng-show="type == 'ico'" class="row text-center">
       <div class="col-xs-12">
-            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Please enter your seed, email address, password and we will attempt to restore your wallet. Activation code is optional.</strong></p>
+            <p class="alert alert-info"><i class="leftIcon fas fa-exclamation-circle"></i><strong>Bitte geben Sie Ihre Seed-Wörter, E-Mmail Addresse, Passwort und den Aktivierungsschlüssel (dieser ist optional) ein. Wir werden versuchen, Ihr Wallet wiederherzustellen.</strong></p>
         </div>
         <div class="col-xs-10 col-xs-offset-1">
             <div class="form-group">
@@ -62,9 +62,9 @@
     </div>
     <div class="row text-center">
         <div class="col-xs-4 col-xs-offset-4">
-            <a ng-click="restore()" class="btn btn-success btn-block">Restore TezBox</a>
+            <a ng-click="restore()" class="btn btn-success btn-block">TezBox Wiederherstellen</a>
             <br />
-            <a ng-click="cancel()" class="btn-link">Cancel</a>
+            <a ng-click="cancel()" class="btn-link">Abbrechen</a>
         </div>
     </div>
     </div>
